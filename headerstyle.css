@@ -1,0 +1,613 @@
+header {
+  z-index:100;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #AD0C0C;
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  position: fixed;
+  top: 0;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+/*селектор класса (специфицирует элемент, маркированный нами как класс с данным названием. несколько элементов могут быть одного класса)*/
+a{
+    text-decoration: none;
+    color:black;
+}
+a:active{
+    color:rgb(27, 0, 0)
+}
+a:visited{
+    color: #cacaca;
+}
+
+header a { /*отвечает за навигацию*/
+  color: #000;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  border-radius: 10px;
+
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: 26px;
+  padding: 0%;
+  position:relative;
+  top:5px;
+  }
+
+
+.rightside{ /*выравнивание по центру относительно верха и низа*/
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 6%;
+  line-height: normal;
+  font-weight: 500;
+  display:flex;
+  text-align: right;
+  }
+
+  .d4{
+    background-color: #AD0C0C;
+    border: 10px solid rgba(215, 215, 215, 0.699);
+    margin: 2vw;
+    padding: 20px;
+    width: 90vw;
+    flex-grow: 1;
+}
+
+.soc_div /*блок содержащий анимированные иконки соцсетей*/
+{
+
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+        flex-flow: wrap;
+        border:none;
+        width: 92%;
+        height: 70%;
+        margin-top: 0vh;
+        margin-bottom:20px;
+        margin-left: 0vw;
+        padding: 20px;
+        flex-grow: 1;
+
+}
+
+.soc_but /*каждый из 4 кружков с соцсетью*/
+{
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 0 30px 2px rgb(0, 0, 0);
+    text-align: center;
+    z-index: 0;
+    margin: 2%;
+}
+
+.soc_but::before /*свойства жёлто-красного кружка над соцсетями*/
+{
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    top: -100%;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    /*padding-top: 20px;*/
+    background: linear-gradient(90deg, rgb(232, 12, 12), rgb(248, 141, 11));
+    transition: 0.7s linear;
+    z-index:-1;
+}
+
+ 
+.soc_but:hover::before /*градиентный кружок спускается на соцсети*/
+{
+    top:0;
+}
+
+.soc_but i{ /*отвечает за расположение значков соцсетей*/
+    display: block;
+    color: white;
+    font-size: 1.6em;
+    z-index:20;
+    position:relative;
+    top: -1vh;
+}
+
+  footer
+  {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(1, 250px),140px;
+      place-items: center/center;
+      gap: 20px;
+      background-color: #AD0C0C;
+  }
+  
+  .foot_div h3{
+      display: block;
+      font-size: 1.3em;
+      font-weight: 800;
+      color: rgb(255, 255, 255);
+      width:100%;
+      
+  }
+  .foot_div a, .foot_div p /*текст в каждой колонке футера*/
+  {
+      color: rgb(255, 255, 255);
+      display:block;
+      width: 90%;
+      margin: 0;
+  }
+  .onas{
+    margin-left: 1vw;
+  }
+
+  .foot_div
+  {
+      box-sizing: border-box;
+      display: flex;
+      flex-flow: wrap column;
+      align-items:baseline;
+      align-content:center;
+      margin-top: 5vh;
+  }
+  
+  footer div:nth-child(1){
+      grid-column: 1;
+      grid-row: 1;
+  }
+  footer div:nth-child(2){
+      grid-column: 2;
+      grid-row: 1;
+  }
+  footer div:nth-child(3){
+      grid-column: 3;
+      grid-row: 1;
+  }
+  footer div:nth-child(4){
+      grid-column: 4;
+      grid-row: 1;
+  }
+  footer div:nth-child(5){
+      grid-column: 1 / span 4;
+      grid-row: 2;
+  }
+
+
+  @media(max-width:768px){ /*моб*/
+    footer
+    {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, 200px),100px;
+        gap: 0;
+    }
+    .foot_div
+    {
+        margin:2px 10px;
+    }
+    .foot_div h3{
+        font-size: 1em;
+    }
+    footer div:nth-child(1){
+        grid-column: 1;
+        grid-row: 1;
+    }
+    footer div:nth-child(2){
+        grid-column: 1;
+        grid-row: 2;
+    }
+    footer div:nth-child(3){
+        grid-column: 1;
+        grid-row: 3;
+    }
+    footer div:nth-child(4){
+        grid-column: 1;
+        grid-row: 4;
+    }
+    footer div:nth-child(5){
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    /* контейнер меню */
+    .menu__box {
+      display: block;
+      position: fixed;
+      visibility: hidden;
+      top: 9vh;
+      margin-top: 60px;      
+      left: -100%;
+      width: 100vw;
+      height: 100%;
+      margin: 0;
+      padding: 80px 0;
+      list-style: none;
+      text-align: center;
+      background-color: #AD0C0C;
+  }
+  #menu__toggle {
+      opacity: 0;
+  }
+
+  .menu__item {
+    margin-bottom: 6vh;
+    margin-right: 3vw;
+    margin-left: 3vw;
+  }
+
+  .menu__btn {
+      display: flex; 
+      align-items: center;  
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+      z-index: 1;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #ffffff;
+  }
+  .menu__btn > span::before {
+      content: '';
+      top: -8px;
+  }
+  .menu__btn > span::after {
+      content: '';
+      top: 8px;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+      transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+      top: 0;
+      transform: rotate(0);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+      visibility: visible;
+      left: 0;
+    }
+    
+    } 
+
+
+
+    @media (min-width:764px) and (max-width: 1000px) /*планшет*/
+    {
+    footer
+  {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 250px),140px;
+      margin-top: 3vh;
+  }
+  
+  .foot_div h3{
+      font-size: 1.2em;
+  }
+  footer div:nth-child(1){
+      grid-column: 1;
+      grid-row: 1;
+  }
+  footer div:nth-child(2){
+      grid-column: 2;
+      grid-row: 1;
+  }
+  footer div:nth-child(3){
+      grid-column: 1;
+      grid-row: 2;
+  }
+  footer div:nth-child(4){
+      grid-column: 2;
+      grid-row: 2;
+  }
+  footer div:nth-child(5){
+      grid-column: 1 / span 2;
+      grid-row: 3;
+  }
+
+   /* контейнер меню */
+   .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 9vh;
+    left: -100%;
+    width: 35vw;;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #AD0C0C;
+    border-color: #ffffff;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+.menu__btn {
+    display: flex; 
+    align-items: center;  
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/*составляющие кнопки меню мобилок*/
+.menu__btn > span, .menu__btn > span::before, .menu__btn > span::after{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px; /*ширина полос, составляющих кнопку меню мобилок-->*/
+    background-color: #ffffff; /*цвет полос, составляющих кнопку меню мобилок-->*/
+}
+
+.menu__btn > span::before { /*верхняя полосочка*/
+    content: '';
+    top: -8px;
+}
+.menu__btn > span::after {/*нижняя полосочка*/
+  content: '';
+  top: 8px;
+}
+
+#menu__toggle:checked ~ .menu__btn > span { /*разворот полоски после нажатия*/
+transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before { /*разворот полоски после нажатия*/
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box { /*кнопка меню становится видимой*/
+    visibility: visible;
+    left: 0;
+  }
+  .menu__item {
+    margin-bottom: 6vh;
+    margin-right: 3vw;
+    margin-left: 3vw;
+  }
+
+  .onas{
+    position: relative;
+    left: 1vw;
+  }
+
+  .tri{
+    position: relative;
+    left: 1vw;
+  }
+  }   
+
+/*links*/
+  p {
+    line-height: 1.4;
+  }
+  
+  a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+    
+    /*селектор псевдо-класс (указывает на состояние)*/
+    header a:link {
+      color: #ffffff;
+    }
+    
+    header a:visited {
+      color: #ffffff;
+    }
+    
+    header a:focus {
+      border-bottom: 1px solid;
+      background: #7d010141;
+    }
+    
+    header a:hover {
+      border-bottom: 1px solid;
+      background: #a00000;
+    }
+    
+    header  a:active {
+      background: #8d0000;
+      color: #ffffff;
+    }
+
+    /*///////////////////УВЕДОМЛЕНИЯ////////////////////////////////////*/
+.uv{ /*кружок уведомлений*/
+  position: absolute;
+  background:  rgb(255, 255, 255);  
+  border: 4px solid #AD0C0C;          ;
+  width:50px;
+  height: 50px;
+  top:15px;
+  right:50px;
+  border-radius: 50px;
+  vertical-align: center;
+  box-sizing: border-box;
+}
+
+.zvon /*КАРТИНКА УВЕДОМЛЕНИЙ*/
+{
+  align-content: center;
+  position: absolute;
+  width:40px;
+  height: 40px;
+  bottom:0;
+  background: no-repeat center/70% url(bell.png);
+}
+
+.uv::before{ /*маленький кружок показывающий наличие уведомлений*/
+  content:"";
+  top:2px;
+  right:2px;
+  position:absolute;
+  width:10px;
+  height: 10px;
+  background: rgb(88, 11, 11);
+  border-radius: 10px;
+}
+.uv:hover
+{
+  border-radius:15px;
+  width:20vw;
+  height:34vh;
+  transition: all .75s ease-in-out;
+}
+.uv:hover > .zvon
+{
+  width:40px;
+  height: 40px;
+  transition: all .75s ease-in-out;
+}
+
+
+.uved /*название (содержани уведомлений) в плашке которая разворачивается ан приведении*/
+{
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  background: white;
+  width:100%;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+  opacity: 0;
+  visibility: hidden;
+}
+.uv:hover > .uved /*появление плашки с уведами*/
+{
+  visibility: visible;
+  transition: opacity 1s ease-in-out 0.5s;
+  opacity: 1;
+}
+
+.u /*класс кружочков непрочитанности*/
+{
+  height:10%;
+  position: relative;
+  padding: 2px;
+}
+.u::before /*кружочки непрочитанности на каждом уведомлении*/
+{
+  content:"";
+  top:40%;
+  left:5%;
+  position:absolute;
+  width:15px;
+  height: 15px;
+  background: #AD0C0C;
+  border-radius: 10px;
+}
+.u:hover /*изменени фона на каждом уведомлении при наведении*/
+{
+  transform: translateY(-20px); /*приподнимание плашки с каким-то уведомлением, на которое навели курсор*/
+  transform: translateX(-5px);
+  width:20vw;
+  height: 8vh;;
+  border-radius: 15px;
+  font-size: 20px;
+  background:#AD0C0C;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+.u:hover::before{ /*изменение цвета кружочка непрочитанности уведомления при наведении на него.*/
+  top:40%;
+  left:5%;
+  width:18px;
+  height: 18px;
+  background: rgb(255, 255, 255);
+  transition: all 0.5s ease-in-out;
+}
+
+
+#menu__toggle, #menu__btn{display: none}
+
+.hamburger-menu
+{
+    width:100%;
+    display:block;
+    float:center;
+    text-align:center; 
+
+}
+
+.hamburger-menu ul{
+    text-align: center; 
+    padding: 0;
+    
+}
+
+ul li{
+    box-sizing: border-box;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 0px; 
+    margin: 0;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: rgb(109, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu__item:hover {
+    background-color: #a70000;
+    border-radius: 5px;
+}
+
+.frame_blc{
+  overflow:hidden;
+  position:relative;
+  padding-bottom:56.25%;
+  padding-top:30px;
+  height:0;
+  margin-bottom: 5vh;
+}
+.frame_blc iframe {
+  position:absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+}

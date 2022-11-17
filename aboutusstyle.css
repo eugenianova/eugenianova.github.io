@@ -1,0 +1,1050 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap');
+        
+        body{
+            font-family: 'Montserrat', sans-serif;
+        }
+        h2{
+            text-align: center;
+        }
+        h2 {
+            display: block;
+            font-size: 1.5em;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+
+        .btn_like {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 10vw;
+            height: 2.5vw;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 1.5em;
+            color: rgb(0, 0, 0);
+            background: rgb(255, 255, 255);
+        }
+        
+        h1{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            color: #1F1F1F;
+            font-size: 120px;
+            text-justify: inter-character;
+            padding: 0px;
+            margin-top: 10px;
+            border: 0px;
+            position: relative;
+            top: 14vh;
+          }
+
+
+        a{
+            text-decoration: none;
+            color:black;
+        }
+
+        .d2{
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.692);
+            border: 10px solid rgb(181, 0, 0);
+            position: relative;
+            padding: 20px;
+            width: 100%;
+        }
+
+        footer{
+            position: relative;
+            top: 8vh;
+        }
+
+        .d4{
+            box-sizing: border-box;
+            background-color: rgb(255, 255, 255);
+            border: 10px solid #676767;
+            padding: 20px;
+            width:100%;
+        }
+        .container /*Grid-контейнер - родительский элемент, к которому применяется свойство display: grid*/
+        { /*снаружи грид-контейнер ведёт себя как блок*/
+            display: grid;
+            grid-template-columns: repeat(12, 1fr); /*разбиваем на 12 колонок, каждая из которых занимает 1/12 долю от общей ширины*/
+            grid-template-rows: repeat(7, 220px), 300px, 500px;
+            place-items: stretch/stretch; /*Свойство-шорткат для указания значений сразу и для align-items и для justify-items*/
+            /*элементы растягиваются на всю ширину ячеек грида*/
+            gap: 20px;
+            position: relative;
+            top: 8vh;
+            margin-bottom: 4vh;
+            margin-top: 4vh;
+        }
+        
+        ul#mirkino{
+            display:flex;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 100;
+            color: #1F1F1F;
+            width:90vw;
+            position: relative;
+            top: 10vh;
+            margin: 4vh;
+          }
+
+          ul li#mirkino1, li#mirkino2, li#mirkino3, li#mirkino4, li#mirkino5, li#mirkino6, li#mirkino7, li#mirkino8, li#mirkino9, li#mirkino10, li#mirkino11, li#mirkino12{
+            flex:  10%;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 100;
+            color: #1F1F1F;
+            margin: 0 10px;
+            font-size: 100;
+          }
+
+        .leftside
+        {
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 7;
+            position:flex;
+            justify-content: space-between;
+            align-items: center; 
+            text-align: center;
+            margin-left: 0.5vw;
+            margin-right: 0vw;
+        }
+        .leftside a
+        {
+            display: block;
+            margin-bottom:10px;
+        }
+
+        .cards
+        {
+            grid-column: 10 /  span 3;
+            grid-row: 1 / span 7;
+            padding: 10px 0;
+        }
+        .text1
+        {
+            grid-column: 4 /  span 3;
+            grid-row: 1 /  span 4;
+        }
+        .text2
+        {
+            grid-column: 7 /  span 3;
+            grid-row: 1 / span 4;
+        }
+        .d{
+            text-align:center;
+        }
+        #Image1{
+            float:right;
+            width: 100px;
+            margin:5px;
+        }
+        #Image2{
+            float:left;
+            width: 150px;
+            height: 150px;
+            margin:5px;
+        }
+        #Image3{
+            position: absolute;
+            top:10px;
+            right:20px;
+            width: 150px;
+            height: 180px;
+            margin:5px;
+        }
+
+        .gallery {
+            margin-left: 10px;
+            margin-right: 10px;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .gallery img {
+            padding: 5px;
+            height: 280px;
+            width: auto;
+            border-radius: 3%;
+        }
+
+        .img
+        {
+            width: 20vw;
+            height: 35vh;
+
+        }
+        .ddd
+        {
+            display: flex;
+            box-sizing: border-box;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            height: 100%;
+            margin-bottom: 25%;
+            
+        }
+
+
+        .btn{
+            width: 17vw;
+            height:9vh;
+            margin: 20px auto;
+            border-radius: 10px;
+            background: rgb(178, 0, 0);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            vertical-align: middle;
+            display: flex;
+            justify-content: space-between;
+            transition: 0.5s;
+            font-size: 20px;
+            color: white;
+        }
+
+        .btn > p
+        {
+            display: inline-block;
+            margin: auto;
+        }
+
+        .btn:hover{
+            background: rgb(109, 0, 0);
+            width:19vw;
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+            transition: all .75s ease-in-out;
+        }
+        .btn1::after
+        {
+            content:"";
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 30px;
+            left: -150%;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+
+        }
+
+        .btn1:hover::after{
+            transform: skewX(-60deg); 
+            animation: flareAnimation 3s infinite linear;
+        }
+
+        .btn2::before{
+            content:"";
+            position: absolute;
+            top:0;
+            right:50%;
+            background: rgb(255, 255, 255);
+            width:0px;
+            height: 2px;
+        }
+
+        .btn2::after
+        {   
+            content:"";
+            position: absolute;
+            right:50%;
+            background: rgb(255, 255, 255);
+            width:0px;
+            height: 2px;
+            bottom: 0;
+        }
+
+        .btn2:hover::before
+        {
+            right:0;
+            width:100%;
+            transition: all .75s ease-in-out;
+        }
+
+        .btn2:hover::after
+        {
+            right:0;
+            width:100%;
+            transition: all .75s ease-in-out;
+        }
+
+        .btn3:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 0 0 2px white, 0 0 0 4px rgb(170, 162, 145, 1);
+        }
+        .soc_div {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-around;
+            flex-flow: wrap;
+            border: none;
+            width: 92%;
+            height: 70%;
+            margin-top: 0vh;
+            margin-bottom: 20px;
+            margin-left: 0vw;
+            padding: 20px;
+            flex-grow: 1;
+            background-color: #AD0C0C;
+        }
+         
+        .soc_but {
+            box-sizing: border-box;
+            width: 60px;
+            height: 60px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 30px;
+            box-shadow: 0 0 30px 2px rgb(0 0 0);
+            text-align: center;
+            z-index: 0;
+            margin: 2%;
+        }
+
+
+
+        .soc_but::before
+        {
+            content: "";
+            position: absolute;
+            box-sizing: border-box;
+            top: -100%;
+            left: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            padding-top: 10px;
+            background: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+            transition: 0.7s linear;
+            z-index:-1;
+        }
+
+        .soc_but:hover::before
+        {
+            top:0;
+
+        }
+
+        .soc_but i{
+            display: block;
+            color: white;
+            font-size: 1.5em;
+            z-index:20;
+        }
+
+        .hover-image-scale {
+            display: inline-block; 
+            overflow: hidden; /* Скрываем всё за контуром */
+            padding: 0;
+          }
+          .hover-image-scale img {
+            transition: 1s; /* Время эффекта */
+            display: block; 
+            width: 12vw;
+
+          }
+          .hover-image-scale img:hover {
+            transform: scale(1.15); /* Увеличиваем масштаб */
+            padding: 0;
+          }
+
+        .form_div
+        {
+            grid-column: 4/ span 6;
+            grid-row: 5/ span 2;
+            position: relative;
+            top: -6vh;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            flex-flow: wrap row;
+            background: rgb(169, 0, 0);
+            margin-top: 4vh;
+        }
+
+        .form_content
+        {
+            width: 70%;
+            box-sizing: border-box;
+            margin: 2% auto;
+            padding: 40px;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(20px);
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            z-index: 0;
+            transition:0.5s;
+            color: #fff;
+            font-size: 1.6em;
+            font-weight: 600;
+        }
+
+        .form_content p
+        {
+            display: block;
+            position: relative;
+            width: auto;
+            padding-bottom:10px;
+        }
+        .form_content p::before
+        {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left:50%;
+            height: 4px;
+            width: 0;
+            opacity: 0;
+            background-color: white;
+            transition: 0.5s;
+        }
+        .form_content:hover p::before
+        {
+            left:0%;
+            width: 100%;
+            opacity: 1;
+        }
+
+        .form_content form input{
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            height: 87%;
+            margin-bottom: 5%;
+            border: none;
+            border-radius: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(100px);
+            padding: 15px;
+            z-index: 5;
+            transition: 0.5s;
+        }
+
+        .form_content form input:focus{
+            border: none;
+            background-color: rgba(255, 255, 255, 0.407);
+        }
+
+        .form_content form input:focus::placeholder{
+            color: rgb(105, 103, 103);
+        }
+
+        .form_content form input::placeholder
+        {
+            padding: 10px 5px;
+            font-size: 1.3em;
+            color:rgba(236, 228, 228);
+        }
+
+        .form_content form button{
+            cursor: pointer;
+            display: block;
+            height: 70%;
+            width: 50%;
+            border-radius: 40px;
+            background-color:white;
+            backdrop-filter: blur(100px);
+            padding: 12px 5px;
+            font-size: 0.7em;
+            font-weight: 600;
+            border: none;
+            color: rgb(126, 116, 116);
+            transition: 0.5s;
+            z-index: 5;
+        }
+
+        .form_content form button:hover
+        {
+            background-color: rgba(255, 255, 255, 0.1);
+            color:white;
+        }
+
+        .container_input
+        {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            place-items: center/stretch;
+            gap: 20px;
+        }
+
+        .container_input input:nth-child(1)
+        {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .container_input input:nth-child(2)
+        {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .container_input input:nth-child(3)
+        {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .container_input input:nth-child(4)
+        {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .container_input input:nth-child(5)
+        {
+            grid-column: 1 / span 2;
+            grid-row: 3;
+        }
+
+        .container_input input:nth-child(6)
+        {
+            grid-column: 1 / span 2;
+            grid-row: 4;
+        }
+
+        .icon_content
+        {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 125px);
+            place-items: center/center;
+            gap: 5px;
+        }
+
+
+
+        .icon /*подложки под иконки с текстом*/
+        {
+            display: flex;
+            box-sizing: border-box;
+            background: #ffffff;
+            border: 3px solid #c3c3c3;
+            backdrop-filter: blur(5px);
+            flex-flow: wrap column;
+            justify-content: space-around;
+            align-items: center; 
+            padding: 2px;
+            text-align: center;
+            transition: 0.5s;
+        }
+
+        .icon:hover
+        {
+            background: #AD0C0C;
+        }
+
+        .icon:hover i /*поведение самой иконки при наведении*/
+        {
+            color:rgb(255, 255, 255);
+        }
+
+        .icon:hover p /*поведение текста в плашках при наведении*/
+        {
+            font-size: 1.2em;
+            color: #fff;
+        }
+
+        .icon p /*текст в каждой мини плашке "почему именно мы*/
+        {
+            color: rgb(255, 255, 255);
+            font-size: 1.1em;
+            font-weight: 500;
+            transition: 0.5s;
+            color: #000000;
+        }
+
+        .icon i{ /*иконки в изначальном состоянии*/
+            
+            height: 2rem;
+            color: #AD0C0C;
+            font-size: 3em;
+            transition: 0.5s;
+        }
+
+        .icon_content .icon:nth-child(1)
+        {
+            grid-column: 1 / span 2;
+            grid-row: 1;
+        }
+
+        .icon_content .icon:nth-child(2)
+        {
+            grid-column: 3;
+            grid-row: 1 / span 2;
+        }
+
+        .icon_content .icon:nth-child(3)
+        {
+            grid-column: 4;
+            grid-row: 1;
+        }
+
+        .icon_content .icon:nth-child(4)
+        {
+            grid-column: 4;
+            grid-row: 2;
+        }
+
+        .icon_content .icon:nth-child(5)
+        {
+            grid-column: 1;
+            grid-row: 2 / span 2;
+        }
+
+        .icon_content .icon:nth-child(6)
+        {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .icon_content .icon:nth-child(7)
+        {
+            grid-column: 2 / span 3;
+            grid-row: 3;
+        }
+
+
+
+    @media (max-width: 764px) /*mobile*/ 
+    {
+        .container{
+            position: relative;
+            top: 16vh;
+        }
+
+        h1{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            color: #1F1F1F;
+            font-size: 46px;
+            text-justify: inter-character;
+            padding: 0px;
+            margin-top: 10px;
+            border: 0px;
+          }
+
+        header
+        {
+            width:100vw;
+        }
+
+        ul#mirkino{
+            display:flex;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 46;
+            color: #1F1F1F;
+            width:90vw;
+            position: absolute;
+            top: -8vh;
+          }
+
+        ul li#mirkino1, li#mirkino2, li#mirkino3, li#mirkino4, li#mirkino5, li#mirkino6, li#mirkino7, li#mirkino8, li#mirkino9, li#mirkino10, li#mirkino11, li#mirkino12
+        {
+            flex:  10%;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 100;
+            color: #1F1F1F;
+            margin: 0 10px;
+        }
+        .leftside
+        {
+            grid-column: 1 / span 12;
+            grid-row: 4;
+        }
+        .leftside a
+        {
+            margin-bottom: 20px;
+        }
+        .leftside a:nth-child(2n+4) img
+        {
+            display:none;
+        }
+        .leftside p:nth-child(2n+3)
+        {
+            display:none;
+        }
+        .cards
+        {
+            grid-column: 1 / span 12;
+            grid-row: 6;
+        }
+        .text1
+        {
+            grid-column: 1 / span 12;
+            grid-row: 1;
+        }
+        .text2
+        {
+            grid-column: 1 / span 12;
+            grid-row: 3;
+        }
+        .form_div /*форма авторизации*/
+        {
+            grid-column: 1 / span 12; /*начинается с первой линии колонок, растягивается на 12 в формате мобилки*/
+            grid-row: 7;
+        }
+        
+        .form_content p
+        {
+            font-size: 0.8em;
+        }
+        .container_input
+        {
+            grid-template-rows: repeat(6, 1fr);
+            gap: 5px;
+        }
+
+        .container_input input:nth-child(1)
+        {
+            grid-column: 1 / span 2;
+            grid-row: 1;
+        }
+
+        .container_input input:nth-child(2)
+        {
+            grid-column: 1 / span 2;
+            grid-row: 2;
+        }
+
+        .container_input input:nth-child(3)
+        {
+            grid-column: 1 / span 2;
+            grid-row: 3;
+        }
+
+        .container_input input:nth-child(4)
+        {
+            grid-column: 1 / span 2;
+            grid-row: 4;
+        }
+
+        .container_input input:nth-child(5)
+        {
+            grid-column: 1 / span 2;
+            grid-row: 5;
+        }
+
+        .container_input input:nth-child(6)
+        {
+            grid-column: 1 / span 2;
+            grid-row: 6;
+        }
+        
+        .form_content form input::placeholder
+        {
+            font-size: 1em;
+        }
+
+        .form_content form button{
+            width: 70%;
+        }
+        .form_content p{
+            font-size: 0.6em;
+        }
+        .form_content form button{
+            font-size: 0.5em;
+        }
+        .form_content form input{
+            height: 60%;
+        }
+        footer{
+            position: relative;
+            top: 8vh;
+        }
+        
+        .hover-image-scale {
+            display: inline-block; 
+            overflow: hidden; /* Скрываем всё за контуром */
+            padding: 0;
+          }
+          .hover-image-scale img {
+            transition: 1s; /* Время эффекта */
+            display: block; 
+            width: 24vw;
+
+        }
+        .hover-image-scale img:hover {
+          transform: scale(1.15); /* Увеличиваем масштаб */
+          padding: 0;
+        }
+        .btn{
+          width: 45vw;
+          height:9vh;
+          margin: 20px auto;
+          border-radius: 10px;
+          background: rgb(178, 0, 0);
+          position: relative;
+          overflow: hidden;
+          text-align: center;
+          vertical-align: middle;
+          display: flex;
+          justify-content: space-between;
+          transition: 0.5s;
+          font-size: 20px;
+            color: white;
+        }
+        .btn:hover{
+            background: rgb(109, 0, 0);
+            width:44vw;
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+            transition: all .75s ease-in-out;
+         }
+    }
+
+
+        @media (min-width:765px) and (max-width: 1000px) /*tablet планшет*/
+        {
+
+        ul#mirkino{
+            display:flex;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 100;
+            color: #1F1F1F;
+            width:90vw;
+            position: absolute;
+            top: -17vh;
+            margin-left: 3vw;
+          }
+
+          footer{
+            position: relative;
+            top: 10vh;
+        }
+
+          ul li#mirkino1, li#mirkino2, li#mirkino3, li#mirkino4, li#mirkino5, li#mirkino6, li#mirkino7, li#mirkino8, li#mirkino9, li#mirkino10, li#mirkino11, li#mirkino12{
+            flex:  10%;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 100;
+            color: #1F1F1F;
+            margin: 0 10px;
+            font-size: 100;
+          }
+        
+          .container /*Grid-контейнер - родительский элемент, к которому применяется свойство display: grid*/
+          { /*снаружи грид-контейнер ведёт себя как блок*/
+              position: relative;
+              top: 14vh;
+              margin-bottom: 4vh;
+
+          }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+
+        }   
+
+        .leftside a
+        {
+            display: block;
+            margin-bottom:10px;
+        }
+
+        .leftside
+        {
+            grid-column: 1 / span 5;
+            grid-row: 1 / span 3;
+        }
+
+        .cards
+        {
+            grid-column: 6 /  span 8;
+            grid-row: 4 ;
+            padding: 0;
+        }
+        .text1
+        {
+            grid-column: 6 / span 7;
+            grid-row: 1 / span 3;
+        }
+        .text2
+        {
+            grid-column: 1 / span 5;
+            grid-row: 4;
+        }
+
+        .leftside a:nth-child(n+6) img
+        {
+            display:none;
+        }
+        .leftside p:nth-child(n+5)
+        {
+            display:none;
+        }
+        .form_div
+        {
+            grid-column: 1 / span 12;
+            grid-row: 5 / span 2;
+        }
+
+        .form_content form input::placeholder
+        {
+            font-size: 1.2em;
+        }
+
+        .form_content form button{
+            width: 40%;
+        }
+        
+        .img
+        {
+            height: 25vh;
+        }
+    }
+
+
+@media (min-width:2560px) /*телевизор*/
+  {
+    main{
+        margin: 0;
+    }
+
+    ul#mirkino{
+        top: 0;
+        position: relative;
+        left: 4vw;
+        top: -10vh important!;
+    }
+
+    .container{
+        margin-bottom: 5vh;
+    }
+
+    body{
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        top: 0vh;
+    }
+
+    .leftside a
+        {
+            display: block;
+            margin-bottom:10px;
+        }
+
+        .leftside
+        {
+            grid-column: 1 / span 5;
+            grid-row: 1 / span 3;
+        }
+
+        .cards
+        {
+            grid-column: 6 /  span 8;
+            grid-row: 4 ;
+            padding: 0;
+        }
+        .text1
+        {
+            grid-column: 6 / span 7;
+            grid-row: 1 / span 3;
+        }
+        .text2
+        {
+            grid-column: 1 / span 5;
+            grid-row: 4;
+        }
+
+        .leftside a:nth-child(n+6) img
+        {
+            display:none;
+        }
+
+        .leftside p:nth-child(n+5)
+        {
+            display:none;
+        }
+
+        .form_div
+        {
+            grid-column: 1 / span 12;
+            grid-row: 5 / span 2;
+        }
+
+        .form_content form input::placeholder
+        {
+            font-size: 1.2em;
+        }
+
+        .form_content form button{
+            width: 40%;
+        }
+
+        
+
+        .soc_but
+        {
+            box-sizing: border-box;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50px;
+            box-shadow: 0 0 30px 2px rgb(0, 0, 0);
+            text-align: center;
+            padding-top: 10px;
+            z-index: 0;
+        }
+
+        .soc_but::before
+        {
+            content: "";
+            position: absolute;
+            box-sizing: border-box;
+            top: -100%;
+            left: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            padding-top: 10px;
+            background: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+            transition: 0.7s linear;
+            z-index:-1;
+        }
+
+        .soc_but:hover::before
+        {
+            top:0;
+
+        }
+
+        .soc_but i{
+            display: block;
+            color: white;
+            font-size: 1.5em;
+            z-index:20;
+        }
+
+        .soc_but i{ /*отвечает за расположение значков соцсетей*/
+            position:relative;
+             top:  -1.1vh impotrant!;
+}
+  }

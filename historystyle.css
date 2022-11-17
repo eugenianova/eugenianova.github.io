@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap');
+    body {    
+    color: #1F1F1F;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 6%;
+    line-height: normal;
+    font-weight: 500;
+  }
+
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; 
+ /* background-color: #F3F3F3; */
+  background: url(background.png) ;
+  background: fixed;
+  /*background: no-repeat;*/
+}
+
+main{
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 120px;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: #1F1F1F;
+  font-size: 110px;
+  text-justify: inter-character;
+  padding: 0px;
+  margin-top: 10px;
+  border: 0px;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  /*letter-spacing: justify;*/
+  color: #1F1F1F;
+  font-size: 75px;
+  text-justify: inter-character;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  /*letter-spacing: justify;*/
+  color: #1F1F1F;
+  font-size: 25px;
+  text-justify: inter-character;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  width		: 100%;
+}
+
+ul#mirkino{
+  display:flex;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 100;
+  color: #1F1F1F;
+  width:90vw;
+}
+
+ul#mirkinoone{
+  display:flex;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 100;
+  color: #1F1F1F;
+}
+
+ul li#mirkino1, li#mirkino2, li#mirkino3, li#mirkino4, li#mirkino5, li#mirkino6, li#mirkino7, li#mirkino8, li#mirkino9, li#mirkino10, li#mirkino11, li#mirkino12{
+  flex:  10%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 100;
+  color: #1F1F1F;
+  margin: 0 10px;
+  font-size: 100;
+}
+
+.unseen{
+    visibility:hidden;
+    position: relative;
+    font-size: 14px;
+    text-align: center;
+}
+
+.titlecontainer{
+  justify-content: center;
+}
+
+.h1{
+margin-left: 0;
+margin-top: 80px;
+}
+
+aside {
+    width: 45vw;
+    float: right;
+    padding-left: 30px;
+    padding-top: 0;
+    position: relative;
+    top: -3vh;
+    margin: 20px;
+    border-left: 2px solid rgb(95, 138, 187);
+    height: auto;
+   }
+
+p#hardtobelieve{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 10%;
+  letter-spacing: 10% !important;
+}
+
+.topleft, .topright, .bottomleft, .bottomright{
+  width: 45vmax;
+  justify-content: center;
+  min-width: 400px;
+}
+
+.godar{
+  object-fit: cover;
+}
+
+.JS{
+  position: relative;
+  left: 900px;
+  top:-20px;
+}
+
+.container
+{
+    width: auto;
+    display:flex; /*флекс контейнер*/
+    justify-content: center;
+    flex-flow: row wrap; /*это сокращение для свойств flex-direction и flex-wrap,
+    которые вместе определяют главную и поперечную оси flex-контейнера*/
+}
+
+    /*/////////////////////////////////////////////////////////////////////*/
+        .jazzsinger{
+            float: right;
+            width: 40vw;
+        }
+
+    @media (min-width:726px) and (max-width: 1000px) /*планшет*/
+{
+    ul#mirkino{
+        display:flex;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 100;
+        color: #1F1F1F;
+        width: 90vw;
+        position: relative;
+        top: -20vh;
+      }
+      
+      ul#mirkinoone{
+        display:flex;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 100;
+        color: #1F1F1F;
+      }
+
+      .quotation{
+        position: relative;
+        top: -80vh;
+      }
+
+    .godar{
+        width:90vw;
+        position:relative;
+        top:-14vh;
+      }
+
+    .undergodar{
+        position: relative;
+        top: -28vh;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .kinematographwas{
+        position: relative;
+        top: -30vh;
+    }
+    .c{
+        position: relative;
+        top: -26vh;
+    }
+
+    .jazzsinger{
+        float: right;
+        width: 90vw;
+    }
+
+
+    .spreadthecinema{
+        position: relative;
+        top: -24vh;
+    }
+
+    aside{
+        color:#00346b;
+        position: relative;
+        top: -26vh;
+    }
+    .kinooperatory{
+        width: 96vw;
+        position: relative;
+        top: -16vh;
+    }
+
+    .d{
+        position: relative;
+        top: -10vh;
+    }
+
+    .jazzsinger{
+        position: relative;
+        top: -8vh;
+    }
+
+    nav li{
+        display: block;
+        width:25vw;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }   
+  }
+@media (max-width: 726px) /*моб*/
+{   .vid{display:none;}
+
+    .d2{width: 25vw; flex-grow: 2;}
+    .aa{width:70vw;}
+    
+    h2{font-size:medium;}
+    #Image3{opacity: 0;}
+
+    nav li{
+        display: block;
+        width:20vw;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }   
+    
+    ul li#mirkino1, li#mirkino2, li#mirkino3, li#mirkino4, li#mirkino5, li#mirkino6, li#mirkino7, li#mirkino8, li#mirkino9, li#mirkino10, li#mirkino11, li#mirkino12, li#mirkino13{
+
+        font-size:46px;
+        margin: 0;
+      }
+    
+      ul#mirkino{
+        display:flex;
+        position: relative;
+        top: -18vh;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 100;
+        color: #c7c7c7;
+      }
+
+    .godar{
+        width:90vw;
+        position:relative;
+        top:-14vh;
+      }
+
+      .unseen{
+        visibility: visible;
+        position: relative;
+        top: -20vh;
+    }
+    .quotation{
+        visibility: hidden;
+    }
+
+    .undergodar{
+        position: relative;
+        top: -40vh;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .kinematographwas{
+        position: relative;
+        top: -44vh;
+    }
+    .c{
+        position: relative;
+        top: -40vh;
+    }
+
+    .jazzsinger{
+        float: right;
+        width: 90vw;
+    }
+
+    aside {
+        width: 100%;
+        position: relative;
+        top: -38vh;
+        height: auto;
+    }
+    .spreadthecinema{
+        position: relative;
+        top: -16vh;
+    }
+
+    .kinooperatory{
+        width: 96vw;
+        position: relative;
+        top: -16vh;
+    }
+
+    .d{
+        position: relative;
+        top: -10vh;
+    }
+
+    .jazzsinger{
+        position: relative;
+        top: -8vh;
+    }
+}     
+
+
+@media (min-width: 426px) and (max-width: 725px)
+{ /*моб*/
+.undergodar{
+    position: relative;
+    top: -32vh;
+    text-align: center;
+    font-size: 14px;
+}
+.kinematographwas{
+    position: relative;
+        top: -30vh;
+}
+.c{
+    position: relative;
+    top: -30vh;
+}
+.menu__item {
+    margin-bottom: 6vh;
+  }
+
+  .menu__box{
+    width: 40vw;
+  }
+}
+
+@media (min-width: 2560px) /*телевизор*/
+{
+  .a{
+    position: relative;
+    top: -6vh;
+  }
+}

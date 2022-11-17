@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap');
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; 
+ /* background-color: #F3F3F3; */
+  background: url(background.png) ;
+  background: fixed;
+  /*background: no-repeat;*/
+}
+
+main{
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 120px;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: #1F1F1F;
+  font-size: 120px;
+  text-justify: inter-character;
+  padding: 0px;
+  margin-top: 10px;
+  border: 0px;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    /*letter-spacing: justify;*/
+    color: #1F1F1F;
+    font-size: 25px;
+    text-justify: inter-character;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    width		: 100%;
+  }
+
+ul#mirkino{
+        display:flex;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 100;
+        color: #1F1F1F;
+        width:90vw;
+        margin-top:30vh;
+
+      }
+      
+      ul li#mirkino1, li#mirkino2, li#mirkino3, li#mirkino4, li#mirkino5, li#mirkino6, li#mirkino7, li#mirkino8, li#mirkino9, li#mirkino10, li#mirkino11, li#mirkino12{
+        flex:  10%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 100;
+        color: #1F1F1F;
+        margin: 0 10px;
+        font-size: 100;
+      }
+
+/**/
+
+
+
+        .container /*Grid-контейнер - родительский элемент, к которому применяется свойство display: grid*/
+        { /*снаружи грид-контейнер ведёт себя как блок*/
+            display: grid;
+            grid-template-columns: repeat(12, 1fr); /*разбиваем на 12 колонок, каждая из которых занимает 1/12 долю от общей ширины*/
+            /*grid-template-rows:repeat(4, auto);*/
+            place-items: stretch/stretch; /*Свойство-шорткат для указания значений сразу и для align-items и для justify-items*/
+            /*элементы растягиваются на всю ширину ячеек грида*/
+            gap: 20px;
+        }
+
+      .topleft
+      {
+          grid-column: 1 / span 6;
+          /*grid-row: 1 / span 2;*/
+          position:flex;
+          justify-content:space-between;
+          align-items: center; 
+          text-align:center;
+         /* place-items: stretch/stretch; */
+      }
+
+      .topleft a
+      {
+          display: block;
+          margin-bottom:100px;
+      }
+      .topleft a img
+      {
+          width:42vw;
+      }
+
+
+      .topright
+      {
+        grid-column: 7 / span 6;
+        justify-items: stretch;
+      }
+      .topright a
+      {
+        grid-column: 7 / span 6;
+        display: block;
+        margin-bottom:100px;
+      }
+      .topright a img
+      {
+          width: 42vw;
+          grid-column: 7 / span 6;
+          position:flex;
+          justify-content:space-between;
+          align-items: center; 
+          text-align:center;
+         justify-items: stretch;
+      }
+
+
+      .bottomleft
+      {
+          grid-column: 1 / span 6;
+          /*grid-row: 2 / span 2;*/
+          position:relative;
+          top: -8vh;
+          justify-content:space-between;
+          align-items: center; 
+          text-align:center;
+         /* place-items: stretch/stretch; */
+      }
+      .bottomleft a
+      {
+          display: block;
+          margin-bottom:100px;
+      }
+      .bottomleft a img
+      {
+          width:42vw;
+      }
+
+
+        .bottomright
+      {
+          grid-column: 7 / span 6;
+          /*grid-row: 2 / span 2;*/
+          position:relative;
+          top: -8vh;
+          justify-content:space-between;
+          align-items: center; 
+          text-align:center;
+         /* place-items: stretch/stretch; */
+         
+      }
+      .bottomright a
+      {
+          display: block;
+          margin-bottom:100px;
+      }
+      .bottomright a img
+      {
+          width:42vw;
+      }
+
+
+* {box-sizing: border-box;}
+
+.titlecontainer{
+  justify-content: center;
+}
+
+.h1{
+margin-left: 0;
+margin-top: 80px;
+}
+
+
+#menu__toggle, #menu__btn{display: none}
+
+.hamburger-menu
+{
+    width:100%;
+    display:block;
+    float:center;
+    text-align:center; 
+
+}
+
+.hamburger-menu ul{
+    text-align: center; 
+    padding: 0;
+    
+}
+
+ul li{
+    box-sizing: border-box;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 0px; 
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+a:active{
+    color:rgb(27, 0, 0)
+}
+a:visited{
+    color: #cacaca;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: rgb(109, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu__item:hover {
+    background-color: #a70000;
+    border-radius: 5px;
+}
+
+
+    @media (min-width:726px) and (max-width: 1000px) /*планшет*/
+{
+    .d2{width: 10vw; flex-grow: 2;}
+    .aa{width:70vw;}
+
+    h1{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        color: #1F1F1F;
+        font-size: 10vw;
+        text-justify: inter-character;
+        padding: 0px;
+        margin-top: 10px;
+        border: 0px;
+      }
+
+    h2{font-size:medium;}
+
+        .container /*Grid-контейнер - родительский элемент, к которому применяется свойство display: grid*/
+        { /*снаружи грид-контейнер ведёт себя как блок*/
+            display: grid;
+            grid-template-columns: repeat(6, 1fr); /*разбиваем на 12 колонок, каждая из которых занимает 1/12 долю от общей ширины*/
+            /*grid-template-rows: repeat(2, auto);*/
+            place-items: stretch/stretch; /*Свойство-шорткат для указания значений сразу и для align-items и для justify-items*/
+            /*элементы растягиваются на всю ширину ячеек грида*/
+            gap: 20px;
+        } 
+
+        .topleft
+        {
+            grid-column: 1 / span 3;
+            position:flex;
+            justify-content:space-between;
+            align-items: center; 
+            text-align:center;
+        }
+  
+        .topleft a
+        {
+            display: block;
+            margin-bottom:100px;
+        }
+        .topleft a img
+        {
+            width:42vw;
+        }
+  
+  
+        .topright
+        {
+          grid-column: 4 / span 3;
+          justify-items: stretch;
+        }
+        .topright a
+        {
+          grid-column: 4 / span 3;
+          display: block;
+          margin-bottom:100px;
+        }
+        .topright a img
+        {
+            width: 42vw;
+            grid-column: 4 / span 3;
+            position:flex;
+            justify-content:space-between;
+            align-items: center; 
+            text-align:center;
+           justify-items: stretch;
+        }
+  
+  
+        .bottomleft
+        {
+            grid-column: 1 / span 3;
+            /*grid-row: 2 / span 2;*/
+            position:relative;
+            top: -8vh;
+            justify-content:space-between;
+            align-items: center; 
+            text-align:center;
+           /* place-items: stretch/stretch; */
+        }
+        .bottomleft a
+        {
+            display: block;
+            margin-bottom:100px;
+        }
+        .bottomleft a img
+        {
+            width:42vw;
+        }
+  
+  
+          .bottomright
+        {
+            grid-column: 4 / span 3;
+            /*grid-row: 2 / span 2;*/
+            position:relative;
+            top: -8vh;
+            justify-content:space-between;
+            align-items: center; 
+            text-align:center;
+           /* place-items: stretch/stretch; */
+           
+        }
+        .bottomright a
+        {
+            display: block;
+            margin-bottom:100px;
+        }
+        .bottomright a img
+        {
+            width:42vw;
+        }
+
+
+
+    ul#mirkino{
+        display:flex;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        /*font-size: 100;*/
+        color: #1F1F1F;
+        position: relative;
+        top: 4vh;
+      }
+
+    nav li{
+        display: block;
+        width:25vw;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 726px) /*моб*/
+{   .vid{display:none;}
+    .d2{width: 25vw; flex-grow: 2;}
+    .aa{width:70vw;}
+
+    h1{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        color: #1F1F1F;
+        font-size: 8vw;;
+        text-justify: inter-character;
+        padding: 0px;
+        position: relative;
+        top: 20vh;
+        border: 0px;
+      }
+
+    h2{font-size:medium;}
+    #Image3{opacity: 0;}
+
+    nav li{
+        display: block;
+        width:20vw;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }   
+    main{
+        margin-left: 4vw;
+        margin-top: 0;
+        margin-right: 4vw;
+    }
+    .container /*Grid-контейнер - родительский элемент, к которому применяется свойство display: grid*/
+    { /*снаружи грид-контейнер ведёт себя как блок*/
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /*разбиваем на 12 колонок, каждая из которых занимает 1/12 долю от общей ширины*/
+        /*grid-template-rows: repeat(2, auto);*/
+        place-items: stretch/stretch; /*Свойство-шорткат для указания значений сразу и для align-items и для justify-items*/
+        /*элементы растягиваются на всю ширину ячеек грида*/
+        gap: 20px;
+    } 
+
+    .topleft
+    {
+        grid-column: 1 / span 3;
+        position:flex;
+        justify-content:space-between;
+        align-items: center; 
+        text-align:center;
+    }
+
+    .topleft a
+    {
+        display: block;
+        margin-bottom:10px;
+    }
+    .topleft a img
+    {
+        width:90vw;
+    }
+
+
+    .topright
+    {
+      grid-column: 1 / span 3;
+      position:flex;
+    justify-content:space-between;
+    align-items: center; 
+    text-align:center;
+      justify-items: stretch;
+    }
+    .topright a
+    {
+      display: block;
+      margin-bottom:10px;
+    }
+    .topright a img
+    {
+        width: 90vw;
+    }
+
+
+    .bottomleft
+    {
+        margin-top: 8vh;
+        grid-column: 1 / span 3;
+        position:flex;
+        justify-content:space-between;
+        align-items: center; 
+        text-align:center;
+        justify-items: stretch;
+
+    }
+    .bottomleft a
+    {
+        display: block;
+        margin-bottom:10px;
+    }
+    .bottomleft a img
+    {
+        width:90vw;
+    }
+
+
+      .bottomright
+    {
+        grid-column: 1 / span 3;
+        /*grid-row: 2 / span 2;*/
+        position: flex;
+        justify-content:space-between;
+        align-items: center; 
+        text-align:center;
+       /* place-items: stretch/stretch; */
+       
+    }
+    .bottomright a
+    {
+        display: block;
+        margin-bottom:10px;
+    }
+    .bottomright a img
+    {
+        width: 90vw;
+    }
+
+    .tri{
+        position: relative;
+        left: 1vw;
+      }
+
+      .onas{
+        position: relative;
+        left: 1vw;
+      }
+
+      .dva{
+        position: relative;
+        left: 1vw;
+      }
+
+      .che{
+        position: relative;
+        left: 1vw;
+      }
+
+    ul li#mirkino1, li#mirkino2, li#mirkino3, li#mirkino4, li#mirkino5, li#mirkino6, li#mirkino7, li#mirkino8, li#mirkino9, li#mirkino10, li#mirkino11, li#mirkino12, li#mirkino13{
+        font-size:46px;
+        margin: 0;
+      }
+
+      ul#mirkino{
+        display:flex;
+        position: relative;
+        top: -18vh;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 100;
+        color: #c7c7c7;
+      }
+}     

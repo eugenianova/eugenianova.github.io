@@ -1,0 +1,412 @@
+.container
+{
+    width: auto;
+    display:flex; /*флекс контейнер*/
+    justify-content: center;
+    flex-flow: row wrap; /*это сокращение для свойств flex-direction и flex-wrap,
+    которые вместе определяют главную и поперечную оси flex-контейнера*/
+}
+
+.gallery {
+
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center; /*позволяет выравнивать flex-элементы внутри flex-контейнера по основной оси.*/
+    display: flex;
+    flex-wrap: wrap; /*Flex-элементы будут иметь возможность переноситься в новый ряд, если не помещаются в одну линию в рамках родителя*/
+}
+
+.gallery img {
+    padding: 5px;
+    height: 280px;
+    width: auto;
+}
+
+.hover-image-scale {
+    display: inline-block; 
+    overflow: hidden; /* Скрываем всё за контуром */
+  }
+  .hover-image-scale img {
+    transition: 1s; /* Время эффекта */
+    display: block; 
+  }
+  .hover-image-scale img:hover {
+    transform: scale(1.15); /* Увеличиваем масштаб */
+  }
+
+@media (max-width: 900px)
+{
+    .a{order:3;}
+    .b{order:2;}
+    .c{order: 4;}
+    .d{order: 5;}
+    .f{ order:0;}
+
+    .d2{width: 25vw; flex-grow: 2;}
+    .aa{width:70vw;}
+    
+    h2{font-size:medium;}
+    #Image3{opacity: 0;}
+
+    nav li{
+        display: block;
+        width:20vw;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }   
+}
+
+
+
+body { 
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; 
+   /* background-color: #F3F3F3; */
+    background: url(background.png) ;
+    background: fixed;
+    /*background: no-repeat;*/
+  }
+  
+  main{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 120px;
+  }
+  
+  h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #1F1F1F;
+    font-size: 100px;
+    text-justify: inter-character;
+    padding: 0px;
+    margin-top: 10px;
+    border: 0px;
+  }
+  
+  h3{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      /*letter-spacing: justify;*/
+      color: #1F1F1F;
+      font-size: 25px;
+      text-justify: inter-character;
+      padding: 0px;
+      margin: 0px;
+      border: 0px;
+      width		: 100%;
+    }
+  
+  ul#mirkino{
+          display:flex;
+          text-align: center;
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 900;
+          font-size: 100;
+          color: #1F1F1F;
+          width:90vw;
+          margin-top:30vh;
+  
+        }
+        
+        ul li#mirkino1, li#mirkino2, li#mirkino3, li#mirkino4, li#mirkino5, li#mirkino6, li#mirkino7, li#mirkino8, li#mirkino9, li#mirkino10, li#mirkino11, li#mirkino12, li#mirkino13, li#mirkino14{
+          flex:  10%;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 900;
+          font-size: 100;
+          color: #1F1F1F;
+          margin: 0 10px;
+          font-size: 100;
+        }
+  
+  * {box-sizing: border-box;}
+  
+  .titlecontainer{
+    justify-content: center;
+  }
+  
+  .h1{
+  margin-left: 0;
+  margin-top: 80px;
+  }
+  
+  
+  #menu__toggle, #menu__btn{display: none}
+  
+  .hamburger-menu
+  {
+      width:100%;
+      display:block;
+      float:center;
+      text-align:center; 
+  
+  }
+  
+  .hamburger-menu ul{
+      text-align: center; 
+      padding: 0;
+      
+  }
+  
+  ul li{
+      box-sizing: border-box;
+      border-radius: 50px;
+      display: inline-block;
+      padding: 0px; 
+      margin: 0;
+  }
+  
+  a{
+      text-decoration: none;
+      color:black;
+  }
+  a:active{
+      color:rgb(27, 0, 0)
+  }
+  a:visited{
+      color: #cacaca;
+  }
+  
+  .menu__item {
+      display: block;
+      padding: 12px 24px;
+      color: rgb(109, 0, 0);
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+  }
+  
+  .menu__item:hover {
+      background-color: #a70000;
+      border-radius: 5px;
+  }
+  
+  
+      @media (min-width:726px) and (max-width: 1000px) /*планшет*/
+  {
+      .d2{width: 10vw; flex-grow: 2;}
+      .aa{width:70vw;}
+  
+      h1{
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 900;
+          color: #1F1F1F;
+          font-size: 10vw;
+          text-justify: inter-character;
+          padding: 0px;
+          margin-top: 10px;
+          border: 0px;
+        }
+  
+      h2{font-size:medium;}
+  
+          .topleft
+          {
+              grid-column: 1 / span 3;
+              position:flex;
+              justify-content:space-between;
+              align-items: center; 
+              text-align:center;
+          }
+    
+          .topleft a
+          {
+              display: block;
+              margin-bottom:100px;
+          }
+          .topleft a img
+          {
+              width:42vw;
+          }
+    
+    
+          .topright
+          {
+            grid-column: 4 / span 3;
+            justify-items: stretch;
+          }
+          .topright a
+          {
+            grid-column: 4 / span 3;
+            display: block;
+            margin-bottom:100px;
+          }
+          .topright a img
+          {
+              width: 42vw;
+              grid-column: 4 / span 3;
+              position:flex;
+              justify-content:space-between;
+              align-items: center; 
+              text-align:center;
+             justify-items: stretch;
+          }
+    
+    
+          .bottomleft
+          {
+              grid-column: 1 / span 3;
+              /*grid-row: 2 / span 2;*/
+              position:relative;
+              top: -8vh;
+              justify-content:space-between;
+              align-items: center; 
+              text-align:center;
+             /* place-items: stretch/stretch; */
+          }
+          .bottomleft a
+          {
+              display: block;
+              margin-bottom:100px;
+          }
+          .bottomleft a img
+          {
+              width:42vw;
+          }
+    
+    
+            .bottomright
+          {
+              grid-column: 4 / span 3;
+              /*grid-row: 2 / span 2;*/
+              position:relative;
+              top: -8vh;
+              justify-content:space-between;
+              align-items: center; 
+              text-align:center;
+             /* place-items: stretch/stretch; */
+             
+          }
+          .bottomright a
+          {
+              display: block;
+              margin-bottom:100px;
+          }
+          .bottomright a img
+          {
+              width:42vw;
+          }
+  
+  
+  
+      ul#mirkino{
+          display:flex;
+          text-align: center;
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 900;
+          /*font-size: 100;*/
+          color: #1F1F1F;
+          position: relative;
+          top: 4vh;
+        }
+  
+      nav li{
+          display: block;
+          width:25vw;
+          margin: auto;
+          margin-top: 20px;
+      }
+  }
+  
+  @media (max-width: 726px) /*моб*/
+  {   .vid{display:none;}
+      .d2{width: 25vw; flex-grow: 2;}
+      .aa{width:70vw;}
+  
+      h1{
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 900;
+          color: #1F1F1F;
+          font-size: 8vw;;
+          text-justify: inter-character;
+          padding: 0px;
+          position: relative;
+          top: 20vh;
+          border: 0px;
+        }
+  
+      h2{font-size:medium;}
+      #Image3{opacity: 0;}
+  
+      nav li{
+          display: block;
+          width:20vw;
+          margin: auto;
+          margin-top: 20px;
+      }
+      .gallery img {
+          width: 100%;
+          height: auto;
+      }   
+      main{
+          margin-left: 4vw;
+          margin-top: 0;
+          margin-right: 4vw;
+      }
+  
+      .tri{
+          position: relative;
+          left: 1vw;
+        }
+  
+        .onas{
+          position: relative;
+          left: 1vw;
+        }
+  
+        .dva{
+          position: relative;
+          left: 1vw;
+        }
+  
+        .che{
+          position: relative;
+          left: 1vw;
+        }
+  
+      ul li#mirkino1, li#mirkino2, li#mirkino3, li#mirkino4, li#mirkino5, li#mirkino6, li#mirkino7, li#mirkino8, li#mirkino9, li#mirkino10, li#mirkino11, li#mirkino12, li#mirkino13, li#mirkino14{
+          font-size:46px;
+          margin: 0;
+        }
+  
+        ul#mirkino{
+          display:flex;
+          position: relative;
+          top: -18vh;
+          text-align: center;
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 900;
+          font-size: 100;
+          color: #c7c7c7;
+        }
+  }     
+
+  @media (min-width:2560px) /*телевизор*/
+  {
+    main{
+        margin: 0;
+    }
+
+    ul#mirkino{
+        margin-top: 15vh;
+        position: relative;
+        left: 4vw;
+    }
+
+    .container{
+        margin-bottom: 4vh;
+    }
+  }

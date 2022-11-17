@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap');
+    body {    
+    color: #1F1F1F;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 6%;
+    line-height: normal;
+    font-weight: 500;
+  }
+
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; 
+  background-color: #F3F3F3;
+}
+
+main{
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  /*letter-spacing: justify;*/
+  color: #1F1F1F;
+  font-size: 110px;
+  text-justify: inter-character;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  /*letter-spacing: justify;*/
+  color: #1F1F1F;
+  font-size: 75px;
+  text-justify: inter-character;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  /*letter-spacing: justify;*/
+  color: #1F1F1F;
+  font-size: 25px;
+  text-justify: inter-character;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+ul#mirkino{
+  display:flex;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 100;
+  color: #1F1F1F;
+}
+
+ul li#mirkino1, li#mirkino2, li#mirkino3, li#mirkino4, li#mirkino5, li#mirkino6, li#mirkino7, li#mirkino8, li#mirkino9, li#mirkino10, li#mirkino11, li#mirkino12{
+  flex:  10%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 100;
+  color: #1F1F1F;
+  margin: 0 10px;
+  font-size: 100;
+}
+
+aside{
+  color: #003580;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 6%;
+    line-height: normal;
+    font-weight: 500;
+}
+
+p#hardtobelieve{
+  font-size: 20px;
+  margin-left:50px;
+  font-weight: 500;
+  line-height: 10%;
+  letter-spacing: 10% !important;
+}
+
+.topleft, .topright, .bottomleft, .bottomright{
+  width: 45vmax;
+  justify-content: center;
+  min-width: 400px;
+}
+

@@ -1,0 +1,1873 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap');
+    body {    
+    color: #1F1F1F;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 6%;
+    line-height: normal;
+    font-weight: 500;
+  }
+
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; 
+ /* background-color: #F3F3F3; */
+  background: url(background.png) ;
+  background: fixed;
+  /*background: no-repeat;*/
+}
+
+main{
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 120px;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: #1F1F1F;
+  font-size: 110px;
+  text-justify: inter-character;
+  padding: 0px;
+  margin-top: 10px;
+  border: 0px;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  /*letter-spacing: justify;*/
+  color: #1F1F1F;
+  font-size: 75px;
+  text-justify: inter-character;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  /*letter-spacing: justify;*/
+  color: #1F1F1F;
+  font-size: 25px;
+  text-justify: inter-character;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  width: 100%;
+}
+
+ul#mirkino{
+  display:flex;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 100;
+  color: #1F1F1F;
+  width:90vw;
+}
+
+ul#mirkinoone{
+  display:flex;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 100;
+  color: #1F1F1F;
+}
+
+ul li#mirkino1, li#mirkino2, li#mirkino3, li#mirkino4, li#mirkino5, li#mirkino6, li#mirkino7, li#mirkino8, li#mirkino9, li#mirkino10, li#mirkino11, li#mirkino12{
+  flex:  10%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 100;
+  color: #1F1F1F;
+  margin: 0 10px;
+  font-size: 100;
+}
+
+.sometimes{
+    margin-left:2vw;
+    font-weight: 500 !important;
+    line-height: 120%;
+    letter-spacing: 100%;
+    font-size: 16px !important;
+    text-align: center;
+}
+
+.unseen{
+    visibility:hidden;
+    position: absolute;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+.titlecontainer{
+  justify-content: center;
+}
+
+
+.h1{
+margin-left: 0;
+margin-top: 80px;
+}
+
+aside {
+    width: 45vw;
+    float: right;
+    padding-left: 30px;
+    padding-top: 0;
+    position: relative;
+    top: -3vh;
+    margin: 20px;
+    border-left: 2px solid rgb(95, 138, 187);
+    height: auto;
+   }
+
+p#hardtobelieve{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 10%;
+  letter-spacing: 10% !important;
+}
+
+.topleft, .topright, .bottomleft, .bottomright{
+  width: 45vmax;
+  justify-content: center;
+  min-width: 400px;
+}
+
+.godar{
+  object-fit: cover;
+}
+
+.JS{
+  position: relative;
+  left: 900px;
+  top:-20px;
+}
+
+
+
+
+label{
+  color: white;
+  display: block;
+}
+
+/*поведение при нажатие на поле*/
+input:focus{
+  outline: none;
+  background: rgb(240, 240, 240);
+  text-decoration: none;
+  border-color: rgb(193, 193, 193);
+  color: white;
+}
+
+input{
+  display: block;
+  width: 90%;
+  height: 5vh;
+  border-radius: 10px;
+  border: 4px solid rgba(218, 221, 220, 1);
+  margin: auto;
+  margin-top: 0.8vh;
+  text-align: center;
+}
+
+
+/**/
+
+fieldset{
+  width: 15vw;
+  margin: 3vw 4vh;
+  color: white;
+  margin-left: 20px;
+  margin-top: -20px;
+}
+
+fieldset > label {
+  width: 10vw;
+  margin: 1vw 4vh;
+  font-size: 1em;
+}
+
+.inp {
+  width: 50%;
+  height: 3vh;
+  margin: auto;
+  margin-top: 0.8vh;
+  text-align: center;
+}
+
+textarea{
+  width:90%;
+  margin-top: 10px;
+  margin-left: 35px;;
+}
+
+select{
+  width: 10vw;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.col1{
+  position: absolute;
+  width: 60%;
+  left:20%;
+  
+}
+
+.col2{
+  position: absolute;
+  width: 50%;
+  left:60%;
+  margin-left:10px;
+}
+
+
+::placeholder {
+  font-weight: bold;
+  opacity: .5;
+  color: rgb(163, 181, 205);
+}
+
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+
+.d2{
+    /*background-color:#AD0C0C;*/
+    display: block;
+    position: relative;
+    margin: 40px;
+    padding: 40px;
+    margin-left: 10vw;;
+}
+/*
+.d4{
+    background-color: #AD0C0C;
+    border: 20px solid rgba(255, 255, 255, 0.856);
+    display: block;
+    margin: 40px;
+    padding: 50px;
+}*/
+/*
+.d4{
+    box-sizing: border-box;
+    background-color: #AD0C0C;
+    border: 10px solid rgba(255, 255, 255, 0.699);
+    padding: 20px;
+    width:100%;
+}*/
+
+.d4{
+    background-color: #AD0C0C;
+    border: 10px solid rgba(215, 215, 215, 0.699);
+    margin: 40px;
+    padding: 20px;
+    width:90vw;
+    flex-grow: 1;
+}
+
+#Topic4{ /*для формы регистрации*/
+    position: relative;
+    height: 130vh;
+}
+
+.check{
+  margin-top: 30px;
+}
+
+.custom-checkbox{
+  position: absolute;
+  top: 560px;
+  left: 200px;
+}
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #b3d7ff;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active+label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox:focus+label::before {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked)+label::before {
+  border-color: #80bdff;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled+label::before {
+  background-color: #e9ecef;
+}
+
+input[type=submit]
+{
+  border-radius: 7px;
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  padding-top: 15px;
+  padding-bottom: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  cursor:pointer;
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#sub{
+  width:50%;
+  margin-left: 5%;
+}
+
+.button2{
+  position: relative;
+  top: 550px;
+  border-radius: 7px;
+  background-color: #AD0C0C; /* Green */
+  border: none;
+  color: #fefbfb;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 650px;
+  padding-right: 650px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  cursor:pointer;
+  width: 100%;
+}
+
+/**/
+.container
+{
+    width: auto;
+    display:flex; /*флекс контейнер*/
+    justify-content: center;
+    flex-flow: row wrap; /*это сокращение для свойств flex-direction и flex-wrap,
+    которые вместе определяют главную и поперечную оси flex-контейнера*/
+}
+
+.gallery {
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center; /*позволяет выравнивать flex-элементы внутри flex-контейнера по основной оси.*/
+    display: flex;
+    flex-wrap: wrap; /*Flex-элементы будут иметь возможность переноситься в новый ряд, если не помещаются в одну линию в рамках родителя*/
+}
+
+.gallery img {
+    padding: 5px;
+    height: 280px;
+    width: auto;
+}
+
+#menu__toggle, #menu__btn{display: none}
+
+.hamburger-menu
+{
+    width:100%;
+    display:block;
+    float:center;
+    text-align:center; 
+
+}
+
+.hamburger-menu ul{
+    text-align: center; 
+    padding: 0;
+    
+}
+
+ul li{
+    box-sizing: border-box;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 0px; 
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+a:active{
+    color:rgb(234, 142, 195)
+}
+a:visited{
+    color:rgb(40, 132, 129)
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: rgb(109, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu__item:hover {
+    background-color: #a70000;
+    border-radius: 5px;
+}
+
+
+/*////////*/
+      .ddd /*отвечает за расположение иконок с картинками в один горизонтальный ряд*/
+      {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          margin-left:0;
+
+      }
+
+      .btn_img{ /*btn_img содержит в себе картинку и кнопку, является контейнером (карточкой)*/
+            box-sizing: border-box;
+            display: inline-block;
+            width: 25vw;
+            margin: 5px;
+            position: relative;
+        }
+
+        .img{ /*размер картинки, помещаемой для применения анимации*/
+            width: 27vw;
+            height: 45vh;
+
+        }
+        
+        .img::before /*отчевает за сервый фон на картинках*/
+        {
+            content: "Текст";
+            vertical-align: center;
+            padding: 40%;
+            box-sizing: border-box;
+            position: absolute;
+            top:0;
+            background: rgba(193, 186, 186, 0.581);
+            width: 27vw;
+            height: 45vh;
+            opacity: 0;
+            text-align:center;
+            font-size: 5vh;
+            color: white; /*цвет текста поверх верогофона*/
+        }
+
+        .img:hover:before
+        {
+            opacity: 1;
+            transition: opacity .75s ease-in-out; /*используется, когда нужно плавно изменить CSS-свойства между двумя состояниями элемента*/
+        /*имя свойства | длительность | временная функция | задержка */
+        /*ease-in-out - анимация начинается и заканчивается медленно, ускоряясь в середине.*/ 
+        }
+
+        .btn{ /*стилизация кнопки в начальном состоянии. они все сначала выглядят одинаково*/
+            width: 17vw;
+            height:10vh;
+            margin: 20px auto;
+            border-radius: 10px;
+            background: rgb(217, 217, 217);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            vertical-align: middle;
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+        }
+
+        .btn > p /*как выглядит текст внутри кнопки*/
+        {
+            display: inline-block;
+            margin: auto;
+            
+        }
+
+        .btn:hover{ /*стилизация кнопки при наведении*/
+            background: #AD0C0C;
+            width:19vw;
+            font-size: 30px;
+            color: rgb(255, 255, 255); /*меняем цвет текста с черного на белый*/
+            transition: all .75s ease-in-out; /* ALL = Apply to all changed properties */
+        }
+        
+        .btn1::after /*диагональная полоска для анимации первой кнопки. появляется при наведении слева направо*/
+        {
+            content:""; /*прямая черта*/
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 30px;
+            left: -150%;
+            background: linear-gradient(90deg, rgba(255, 0, 0, 0.1), rgba(255, 255, 255, 0.4));
+
+        }
+
+        .btn1:hover::after{ /*блик*/
+            transform: skewX(-60deg); /*полоска анимации для первой кнопки будет двигаться 3 секунды бесконечно под углом 60 град*/
+            animation: flareAnimation 3s infinite linear; /*flareAnimation = блик*/
+        }
+
+        .btn2::before{ /*отвечает за верхнюю полосу*/
+          content:"";
+          position: absolute;
+          top:0;
+          right:0%; /*начинаем переход слева*/
+          background: rgb(255, 255, 255);
+          width:0px;
+          height: 2px;
+      }
+
+        .btn2::after /*нижняя полоса*/
+        {   
+            content:"";
+            position: absolute;
+            right:100%; /*начинаем переход српава*/
+            background: rgb(255, 255, 255);
+            width:0px;
+            height: 2px;
+            bottom: 0;
+        }
+
+        .btn2:hover::before
+        {
+            right:0;
+            width:100%;
+            transition: all .75s ease-in-out; /*transition будет работать только при наведении так как транзищн указано только здесь*/
+        } /*С помощью transition можно плавно изменять любое свойство, у которого значение записывается с помощью чисел */
+
+        .btn2:hover::after
+        {
+            right:0;
+            width:100%;
+            transition: all .75s ease-in-out;
+        }
+
+        .btn3:hover{ /*transform используется, когда нужно применить к элементу какие-либо трансформации: искажение, поворот, смещение, масштабирование.*/
+            transform: translateY(-10px); /*смещение элемента вверх*/
+            box-shadow: 0 0 0 2px white, 0 0 0 4px rgb(170, 162, 145, 1); /*придание двойной тени*/
+        }
+
+        .uv{ /*кружок уведомлений*/
+            position: absolute;
+            background:  rgb(255, 255, 255);  
+            border: 4px solid #AD0C0C;          ;
+            width:50px;
+            height: 50px;
+            top:15px;
+            right:50px;
+            border-radius: 50px;
+            vertical-align: center;
+            box-sizing: border-box;
+        }
+
+        .zvon /*КАРТИНКА УВЕДОМЛЕНИЙ*/
+        {
+            align-content: center;
+            position: absolute;
+            width:40px;
+            height: 40px;
+            bottom:0;
+            background: no-repeat center/70% url(bell.png);
+        }
+        
+        .uv::before{ /*маленький кружок показывающий наличие уведомлений*/
+            content:"";
+            top:2px;
+            right:2px;
+            position:absolute;
+            width:10px;
+            height: 10px;
+            background: rgb(88, 11, 11);
+            border-radius: 10px;
+        }
+
+        .uv:hover
+        {
+            border-radius:15px;
+            width:20vw;
+            height:34vh;
+            transition: all .75s ease-in-out;
+        }
+
+        .uv:hover > .zvon
+        {
+            width:40px;
+            height: 40px;
+            transition: all .75s ease-in-out;
+        }
+
+
+        .uved /*название (содержани уведомлений) в плашке которая разворачивается ан приведении*/
+        {
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 0;
+            background: white;
+            width:100%;
+            text-align: center;
+            border-radius: 0 0 15px 15px;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .uv:hover > .uved /*появление плашки с уведами*/
+        {
+            visibility: visible;
+            transition: opacity 1s ease-in-out 0.5s;
+            opacity: 1;
+        }
+ 
+        .u /*класс кружочков непрочитанности*/
+        {
+            height:10%;
+            position: relative;
+            padding: 2px;
+
+        }
+
+        .u::before /*кружочки непрочитанности на каждом уведомлении*/
+        {
+            content:"";
+            top:40%;
+            left:5%;
+            position:absolute;
+            width:15px;
+            height: 15px;
+            background: #AD0C0C;
+            border-radius: 10px;
+        }
+
+        .u:hover /*изменени фона на каждом уведомлении при наведении*/
+        {
+            transform: translateY(-20px); /*приподнимание плашки с каким-то уведомлением, на которое навели курсор*/
+            transform: translateX(-5px);
+            width:20vw;
+            height: 8vh;;
+            border-radius: 15px;
+            font-size: 20px;
+            background:#AD0C0C;
+            color: white;
+            transition: all 0.5s ease-in-out;
+
+        }
+
+        .u:hover::before{ /*изменение цвета кружочка непрочитанности уведомления при наведении на него.*/
+            top:40%;
+            left:5%;
+            width:18px;
+            height: 18px;
+            background: rgb(255, 255, 255);
+            transition: all 0.5s ease-in-out;
+        }
+
+        .jazzsinger{
+            float: right;
+            width: 40vw;
+        }
+
+        .vid{position: relative;}
+
+        .vid::before /*плашка с надписью над видео, она появляется при наведении*/
+        {
+            box-sizing: border-box;
+            content:"В кинотеатрах НЕ россии с 1 ноября";
+            visibility: hidden;
+            text-align: center;
+            padding-top: 50px;
+            opacity: 0;
+            width:20%;
+            height: 20%;
+            background: rgba(255, 255, 255, 0.659);
+            position: absolute;
+            bottom:100px;
+            right: 200px;
+        }
+        .vid:hover::before
+        {
+            visibility: visible;
+            opacity: 1;
+            transition: all 0.5s ease-in-out;
+        }
+
+/*/////////////////////*/
+
+
+    @media (min-width:726px) and (max-width: 1000px) /*планшет*/
+{
+    .d2{width: 10vw; flex-grow: 2;}
+    .d4{width: 25vw;}
+    .aa{width:70vw;}
+    
+    h2{font-size:medium;}
+
+    ul#mirkino{
+        display:flex;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 100;
+        color: #1F1F1F;
+        width: 90vw;
+        position: relative;
+        top: -20vh;
+      }
+      
+      ul#mirkinoone{
+        display:flex;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 100;
+        color: #1F1F1F;
+      }
+
+      .quotation{
+        position: relative;
+        top: -70vh;
+      }
+
+    .sometimes{
+        position: relative;
+        top: -20vh;
+        margin-left:2vw;
+        font-weight: 500 !important;
+        line-height: 120%;
+        letter-spacing: 100%;
+        font-size: 16px !important; 
+    }
+
+    .godar{
+        width:90vw;
+        position:relative;
+        top:-8vh;
+      }
+
+    .undergodar{
+        position: relative;
+        top: -24vh;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .kinematographwas{
+        position: relative;
+        top: -30vh;
+    }
+    .c{
+        position: relative;
+        top: -26vh;
+    }
+
+    .jazzsinger{
+        float: right;
+        width: 90vw;
+    }
+
+
+    .spreadthecinema{
+        position: relative;
+        top: -24vh;
+    }
+
+    aside{
+        color:#00346b;
+        position: relative;
+        top: -26vh;
+    }
+    .kinooperatory{
+        width: 96vw;
+        position: relative;
+        top: -16vh;
+    }
+
+    .d{
+        position: relative;
+        top: -10vh;
+    }
+
+    .jazzsinger{
+        position: relative;
+        top: -8vh;
+    }
+
+    nav li{
+        display: block;
+        width:25vw;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }   
+    
+    /* контейнер меню */
+    .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 35vw;;
+        height: 100%;
+        margin: 0;
+        margin-top: 60px;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #AD0C0C;
+        border-color: #ffffff;
+    }
+
+    #menu__toggle {
+        opacity: 0;
+    }
+    .menu__btn {
+        display: flex; 
+        align-items: center;  
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px; /*по ширине кнопки расположены три полосы span*/
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    /*составляющие кнопки меню мобилок*/
+    .menu__btn > span, .menu__btn > span::before, .menu__btn > span::after{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px; /*ширина полос, составляющих кнопку меню мобилок-->*/
+        background-color: #ffffff; /*цвет полос, составляющих кнопку меню мобилок-->*/
+    }
+
+    .menu__btn > span::before { /*верхняя полосочка*/
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {/*нижняя полосочка*/
+      content: '';
+      top: 8px;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span { /*разворот полоски после нажатия*/
+    transform: rotate(45deg);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before { /*разворот полоски после нажатия*/
+        top: 0;
+        transform: rotate(0);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu__box { /*кнопка меню становится видимой*/
+        visibility: visible;
+        left: 0;
+      }
+}
+
+/*///*/
+
+.neon_div /*плашка-блок, в которой находятся три анимированныхх элемента*/
+{
+    height: 90%;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap row;
+    background: #000;
+    
+}
+
+.neon /*стилизация всех трёх плашек с текстом*/
+{
+    position: relative;
+    width:30%; /*ширина каждого из трёх*/
+    margin: 8rem 1rem;
+    border-radius: 1rem;
+    display: inline-block;
+    box-sizing: border-box;
+    backdrop-filter: blur(5px); /*у свойства backdrop-filter значение размытия (5 микселей накладываются друг на друга)*/
+    z-index: 15;
+}
+
+
+.neon::after, .neon::before /*отвечает за форму и положение в пространстве трёх цветных плашек*/
+{
+    
+    content:"";
+    position: absolute;
+    top:-40%; /*чуть приподнимаем наверх, так как они низко расположены*/
+    left:25%;
+    width:60%;
+    height: 180%;
+    border-radius: 5px;
+    transform: skewX(15deg);
+    transition: 0.5s; /*разворот плашки происходит в течение 0,5 секунд*/
+    z-index: -10;
+    
+}
+.neon::after{
+  filter: blur(30px);
+} 
+
+/*отвечает за цвет трёх цветных плашек*/
+.neon:nth-child(1):before, .neon:nth-child(1):after{ /*nth-child matches elements based on their position among a group of siblings.*/
+  background: linear-gradient(45deg, rgb(255, 0, 0), rgb(11, 248, 47));
+}
+
+.neon:nth-child(2):before, .neon:nth-child(2):after{
+  background: linear-gradient(45deg, rgb(116, 18, 201), rgb(212, 33, 33));
+}
+
+.neon:nth-child(3):before, .neon:nth-child(3):after{
+  background: linear-gradient(45deg, rgb(200, 185, 47), rgb(255, 0, 0));
+}
+
+
+
+.neon_cont{ /*прозначная глассморфная плашка, на которой и написан белый текст*/
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(100px);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 1;
+    transition:0.5s;
+    color: #fff;
+}
+
+
+.neon_cont::before
+{
+    content:"";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+}
+.neon:hover:before, .neon:hover::after 
+{
+    transform: skewX(0deg);
+    width:70%;
+    transform: translateX(-15%);
+}
+
+.neon span{
+    display: block;
+    z-index:5;
+}
+
+.neon span::before/*верхний движущийся квадратик*/
+{
+    content:"";
+    position: absolute;
+    top:-50%;
+    left:5%;
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    opacity:0;
+    z-index:0;
+}
+
+.neon span::after /*нижний движущийся квадратик, идентичный верхнему*/
+{
+    content:"";
+    position: absolute;
+    bottom:-50%;
+    right:5%;
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    opacity:0;
+    z-index:0;
+}
+
+ .neon:hover span::before /*указываем время возникновения квадратиков и анимацию, которую к ним нужно приемнить (она в коде ниже)*/
+{
+    opacity: 1;
+    width: 70px;
+    height: 70px;
+    transition: 1.5s;
+    animation: square_top 10s linear infinite; /*на анимацию всего отводится 10 секунд (полный оборот квадрата вокруг плашки)*/
+}
+.neon:hover span::after
+{
+    opacity: 1;
+    width: 70px;
+    height: 70px;
+    transition: 1.5s;
+    animation: square_bottom 10s linear infinite;
+}
+
+.neon:hover .neon_cont /*при наведении сдвигаем подтекстную плашку влево  */
+{
+    transform: translateX(-7%);
+    transition: all 1s;
+}
+
+.neon_cont a{ /*отвечает за кнопку под текстом плашки*/
+
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.neon_cont a:hover{
+    background-color: #dbd7cb;
+    transition: 0.5s;
+}
+
+
+
+
+.form_div  /*блок в котором расположена форма с анимацией*/
+{
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap row;
+    background: rgb(0, 0, 0);
+    border: none;
+    margin: 40px;
+    padding: 20px;
+    width:90vw;
+    flex-grow: 1;
+}
+
+.form_content /*здесь и серая плашка, и текст*/
+{
+    width: 60%;
+    box-sizing: border-box;
+    margin: 10% auto;
+    padding: 40px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 0;
+    transition:0.5s;
+    color: #fff;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.form_content p /*черта под авторизацией*/
+{
+    display: block;
+    position: relative;
+    width: 50%;
+    padding-bottom:10px; /*10 пикселей отступ от низа букв авторизация*/
+}
+
+.form_content p::before /*описание черты под авторизацией и как она появляется*/
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    height: 4px;
+    width: 0;
+    opacity: 0; /*изначально она не видна.*/
+    background-color: white;
+    transition: 0.5s;
+}
+.form_content:hover p::before 
+{
+    left:0%;
+    width: 100%;
+    opacity: 1;
+}
+
+.form_content form input{
+    display: block;
+    width: 80%;
+    height: 50%;
+    margin-bottom: 5%;
+    border: none;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(100px);
+    padding: 15px;
+    z-index: 5;
+}
+
+.form_content form input:focus{ /*при нажатии фон в поле для ввода меняется на более светлый*/
+    border: none;
+    background-color: rgba(255, 255, 255, 0.407);
+}
+
+.form_content form input::placeholder /*описание текста показывающего что вводить*/
+{
+    padding: 10px 5px;
+    font-size: 1.3em;
+    color:rgba(236, 228, 228);
+}
+
+.form_content form button{ /*как кнопка выглядит в изначальном состоянии*/
+    cursor: pointer;
+    display: block;
+    height: 50%;
+    width: 30%;
+    margin-top: 8%;
+    border-radius: 40px;
+    background-color:white;
+    backdrop-filter: blur(100px);
+    padding: 10px 5px;
+    font-size: 0.7em;
+    font-weight: 600;
+    border: none;
+    color: rgb(126, 116, 116);
+    transition: 0.5s;
+    z-index: 5;
+}
+
+.form_content form button:hover /*что происходит с кнопкой при наведении*/
+{
+    background-color: rgba(255, 255, 255, 0.1);
+    color:white;
+}
+
+.form_content span{ /*спан отвечает за все квадраты*/
+    display: block;
+    z-index:5;
+    transition: 0.5s;
+}
+
+/*элементы с псевдоэлементом бефор - левый и правый квадраты, их анимация отличаетя от остальных трёх.*/
+.form_content span:nth-child(1)::before /*первый квадрат (самый большой)*/
+{
+    content:"";
+    position: absolute;
+    top:40%;
+    left:-25%;
+    height: 120px;
+    width: 120px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index:110;
+}
+
+.form_content span:nth-child(1)::after
+{
+    content:"";
+    position: absolute;
+    top:-15%;
+    right:-10%;
+    height: 100px;
+    width: 100px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index:-10;
+}
+
+.form_content span:nth-child(4)::after /*верхний квадрат*/
+{
+    content:"";
+    position: absolute;
+    top:-15%;
+    left:30%;
+    height: 60px;
+    width: 60px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index:-110;
+}
+
+.form_content span:nth-child(4)::before
+{
+    content:"";
+    position: absolute;
+    bottom:5%;
+    right:-15%;
+    height: 70px;
+    width: 70px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index:110;
+}
+.form_content span:nth-child(5)::after
+{
+    content:"";
+    position: absolute;
+    bottom:-30%;
+    left:40%;
+    height: 50px;
+    width: 50px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index:110;
+}
+
+/*квадраты начинают двигаться по анимации лишь при наведении на контентную область формы*/
+ .form_content:hover span::before 
+{
+    animation: bef 5s linear infinite;
+}
+.form_content:hover span::after
+{
+    animation: aft 5s linear infinite;
+}
+
+
+
+
+.grad_div, .card_div /*для последних двух сецкий дз применяем одинаковые свойсвта*/
+{ /*пдашка на которой находятся три карточки*/
+        position: relative;
+        box-sizing: border-box;
+        height: 500px;
+        display: flex;
+        justify-content: space-around;
+        flex-flow: wrap row;
+        background: #101010;
+        border:none;
+}
+
+.grad /*свойства каждой белой карточки на которой текст*/
+{
+    margin: auto;
+    position: relative;
+    width: 32%;
+    height: 410px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgb(190, 0, 0);
+    overflow: hidden; /*остаток овала скрывается*/
+    z-index: 0;
+    transition: 0.5s;
+}
+
+.grad::before /*вертикальный овал, на видимой части которого (в карточке) располагается цифра-номер карточки*/
+{
+    content:"";
+    position: absolute;
+    top: -60%;
+    left: -5%;
+    width: 110%;
+    height: 100%;
+    border-radius: 50%;
+    background: #000;
+    z-index: 5;
+
+}
+
+.grad_cont h2 /*цифры*/
+{
+    display: block;
+    color: rgb(193, 0, 0);
+    font-size: 3em;
+    font-weight: 800;
+    margin: 20px 0 100px;;
+}
+
+.grad:nth-child(1)::before, .grad:nth-child(1) .grad_btn{ /*стилизация кнопки*/
+    background-color: rgb(255, 255, 255);
+}
+
+.grad:nth-child(2)::before, .grad:nth-child(2) .grad_btn{
+    background-color: rgb(255, 255, 255);
+}
+
+.grad:nth-child(3)::before, .grad:nth-child(3) .grad_btn{
+    background-color: rgb(255, 255, 255);
+}
+
+.grad_cont /*свойства текста на карточках*/
+{
+    position: relative;
+    text-align: center;
+    font-size: 0.8em;
+    z-index: 10;
+    color: rgb(255, 255, 255);
+}
+
+.grad_btn /*кнопка на карточках предплседнего блока*/
+{
+    cursor: pointer;
+    width: 50%;
+    padding: 5%;
+    margin:10% auto;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.grad_fon /*размытие заднего плана при наведении*/
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(204, 191, 135, 0.233);
+    backdrop-filter: blur(5px);
+    z-index: -100;
+    opacity: 1;
+    transition: 2s;}
+.grad:hover
+{
+    z-index:101;
+    transform: translateY(-30px)
+}
+.grad:hover~.grad_fon
+{
+    opacity: 1;
+    z-index:100;
+}
+
+
+
+.card /*последний лок практической работы. три карточки с текстом и кнопкой*/
+{
+    margin: auto;
+    position: relative;
+    width: 30%;
+    height: 420px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.814);
+    backdrop-filter: blur(10px);
+    overflow: hidden; /*скрывает элементы, относящиеся к карточке за пределами этой карточки (например анимацию бликов. чтобы она была точно по контуру)*/
+    z-index: 0;
+    transition: 0.5s;
+    
+}
+
+
+.card::before /*маленький красный прямоугольник слева в плашке (цвет фона)*/
+{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 100%;
+    transition: 0.5s;
+
+}
+
+.card:nth-child(1)::before{ /*элементы красные прямоугольники*/
+    background-color: rgb(181, 0, 0);
+}
+.card:nth-child(2)::before{
+    background-color: rgb(181, 0, 0);
+}
+.card:nth-child(3)::before{
+    background-color: rgb(181, 0, 0);
+}
+
+.card_btn
+{
+    background: white;
+    cursor: pointer;
+    width: 50%;
+    padding: 5%;
+    margin:10% auto;
+    border-radius: 20px;
+    color: black;
+}
+
+.card_cont h2 /*заголовок-цифры на карточке*/
+{
+    display: block;
+    color: rgb(133, 0, 0);
+    font-size: 3em;
+    font-weight: 800;
+    margin: 20px 0 70px;
+}
+
+.card_cont /*текст на карточках*/
+{
+    position: relative;
+    text-align: center;
+    font-size: 0.8em;
+    z-index: 10;
+    color: rgb(0, 0, 0);
+}
+
+.card:hover, .card:hover:before, .card:hover .card_cont /*поведение карточки при наведении*/
+{
+    filter: brightness(120%);
+    z-index: 102;
+}
+.card:hover{
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.card_fon /*фон затухает при наведении на карточку*/
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(204, 191, 135, 0.233);
+    filter: brightness(20%);
+    z-index: -100;
+    opacity: 0;
+    transition: 1s;
+}
+.card:hover~.card_fon /*для card_fon расположенного после card применяем:*/
+{
+    opacity: 1;
+    z-index:100;
+    transition: 1s;
+}
+
+.span_hor::before  
+{
+    content:"";
+    position: absolute;
+    top:0;
+    left: 0;
+    height:2px;
+    width: 100%;
+    background: linear-gradient(45deg, rgb(172, 172, 172), rgb(255, 255, 255) 58%);
+    z-index: 1000;
+    opacity: 0;
+}
+
+.card:hover .span_hor::before /*для каждого .span_hor находящегося в .card:hover*/
+{ /*верхняя бликовая полоска*/
+    opacity: 1;
+    transition: 1s;
+    animation: 2s animateTop  linear infinite;
+}
+
+.span_hor::after
+{
+    content:"";
+    position: absolute;
+    bottom:0;
+    left: 0;
+    height:2px;
+    width: 100%;
+    background: linear-gradient(45deg, rgb(255, 255, 255), rgb(172, 172, 172) 58%);
+    opacity: 0;
+    z-index: 1000;
+}
+
+.card:hover .span_hor::after
+{
+    opacity: 1;
+    transition: 1s;
+    animation: 2s animateBottom  linear infinite;
+}
+
+.span_vert::before /*отвечает за вертикальное движение бликовых полосок (слева)*/
+{
+    content:"";
+    position: absolute;
+    top:0;
+    left: 0;
+    width:2px;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(255, 255, 255),rgb(172, 172, 172) 58%);
+    opacity: 0;
+    z-index: 1000;
+}
+.card:hover .span_vert::before
+{
+    opacity: 1; /*градиентная полоска становится видна только при наведении*/
+    transition: 1s;
+    animation: 2s animateLeft  linear -1s infinite; /*плжключаем названную анимацию*/
+}
+
+.span_vert::after /*отвечает за вертикальное движение бликовых полосок (справа)*/
+
+{
+    content:"";
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(172, 172, 172), rgb(255, 255, 255) 58%);
+    opacity: 0;
+    z-index: 1000;
+}
+
+.card:hover .span_vert::after
+{
+    opacity: 1;
+    transition:1s;
+    animation: 2s animateRight linear -1s infinite;
+}
+
+  
+  @keyframes animateTop {
+    0% {
+              transform: translateX(-100%);
+    }
+    100% {
+              transform: translateX(100%);
+    }
+  }
+  
+  
+  @keyframes animateRight {
+    0% {
+              transform: translateY(-100%);
+    }
+    100% {
+              transform: translateY(100%);
+    }
+  }
+  
+  
+  @keyframes animateLeft {
+    0% {
+              transform: translateY(100%);
+    }
+    100% {
+              transform: translateY(-100%);
+    }
+  }
+  
+  
+  @keyframes animateBottom {
+    0% {
+              transform: translateX(100%);
+    }
+    100% {
+              transform: translateX(-100%);
+    }
+  }
+  
+@keyframes flareAnimation {
+    0% {
+        left: -150%;
+    }
+    100% {
+        left: 150%;
+    }
+}
+
+@keyframes bef { /*анимация для двух (самый правый и самый левый квадратов во втором блоке*/
+        
+        20% {
+         transform: translateX(calc(50% + 30px + 2vw)) translateY(calc(50% + 20px + 1vh));
+        }  
+        50% {
+          transform: translateX(calc(50% +30px + 2vw)) translateY(calc(-40% + 20px + 1vh));
+        }
+        70% {
+          transform: translateX(calc(-200% + 1vw)) translateY(calc(-50% + 20px));
+        }
+        0%,100% {
+            transform: translateX(calc(-100% + 1vw)) translateY(calc(100% - 20px + 1vh));
+           }
+}
+
+@keyframes aft { /*анимация для трёх (верхние и нижние) квадратов во втором блоке*/
+    20% {
+     transform: translateX(calc(50% - 30px + 2vw)) translateY(calc(50% + 20px + 1vh));
+    }  
+    50% {
+      transform: translateX(calc(20% +30px + 2vw)) translateY(calc(-10% + 20px + 1vh));
+    }
+    70% {
+      transform: translateX(calc(100% + 1vw)) translateY(calc(120% + 20px));
+    }
+    0%,100% {
+        transform: translateX(calc(-50% + 1vw)) translateY(calc(100% - 20px + 1vh));
+       }
+}
+
+@keyframes square_top { /*анимирование верхнего движущегося квадрата в первом блоке дз. 4 ключевых точки = 4 точки смены траектории движения сверху вниз и назад к верху*/
+    0% {
+        transform: translateX(-0) translateY(0);
+       }
+       20% {
+        transform: translateX(360%) translateY(0);
+       }  
+        50% {
+            transform: translateX(360%) translateY(800%);
+          }
+        70% {
+          transform: translateX(0%) translateY(800%);
+        }
+        
+    }
+
+    @keyframes square_bottom { /*анимирование нижнего движущегося квадрата в первом блоке дз. 4 ключевых точки = 4 точки смены траектории движения сниху ввуерх и назад к низу*/
+        0%,100% {
+            transform: translateX(0%) translateY(0);
+           }
+            20% {
+             transform: translateX(-360%) translateY(0);
+            }  
+            50% {
+              transform: translateX(-360%) translateY(-800%);
+            }
+            70% {
+              transform: translateX(0%) translateY(-800%);
+            }
+            
+        }
+
+
+
+
+
+@media (max-width: 726px) /*моб*/
+{   .vid{display:none;}
+
+    .d2{width: 25vw; flex-grow: 2;}
+    .d4{width: 25vw;}
+    .aa{width:70vw;}
+    
+    h2{font-size:medium;}
+    #Image3{opacity: 0;}
+
+    nav li{
+        display: block;
+        width:20vw;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }   
+    
+    ul li#mirkino1, li#mirkino2, li#mirkino3, li#mirkino4, li#mirkino5, li#mirkino6, li#mirkino7, li#mirkino8, li#mirkino9, li#mirkino10, li#mirkino11, li#mirkino12, li#mirkino13{
+
+        font-size:46px;
+        margin: 0;
+      }
+    /* контейнер меню */
+    .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #ffffff;
+    }
+    #menu__toggle {
+        opacity: 0;
+    }
+    .menu__btn {
+        display: flex; 
+        align-items: center;  
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+    }
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+      }
+      ul#mirkino{
+        display:flex;
+        position: relative;
+        top: -18vh;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 100;
+        color: #c7c7c7;
+      }
+      
+      .sometimes{
+        position: relative;
+        top: -20vh;
+        margin-left:2vw;
+        font-weight: 500 !important;
+        line-height: 120%;
+        letter-spacing: 100%;
+        font-size: 12px !important; 
+    }
+
+    .godar{
+        width:90vw;
+        position:relative;
+        top:-8vh;
+      }
+
+      .unseen{
+        visibility: visible;
+        position: absolute;
+        top:30vh;
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+    .quotation{
+        visibility: hidden;
+    }
+
+    .undergodar{
+        position: relative;
+        top: -35vh;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .kinematographwas{
+        position: relative;
+        top: -44vh;
+    }
+    .c{
+        position: relative;
+        top: -40vh;
+    }
+
+    .jazzsinger{
+        float: right;
+        width: 90vw;
+    }
+
+    aside {
+        width: 100%;
+        position: relative;
+        top: -38vh;
+        height: auto;
+    }
+    .spreadthecinema{
+        position: relative;
+        top: -16vh;
+    }
+
+    .kinooperatory{
+        width: 96vw;
+        position: relative;
+        top: -16vh;
+    }
+
+    .d{
+        position: relative;
+        top: -10vh;
+    }
+
+    .jazzsinger{
+        position: relative;
+        top: -8vh;
+    }
+}     
+
+
+@media (min-width: 426px) and (max-width: 725px)
+{ /*моб*/
+.undergodar{
+    position: relative;
+    top: -26vh;
+    text-align: center;
+    font-size: 14px;
+}
+.kinematographwas{
+    position: relative;
+        top: -30vh;
+}
+.c{
+    position: relative;
+    top: -30vh;
+}
+
+
+}
